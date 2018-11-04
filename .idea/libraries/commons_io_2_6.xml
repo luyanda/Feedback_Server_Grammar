@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="commons-io-2.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../commons-io-2.6/commons-io-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/Business/antlr-4.7.1-complete.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/ava/common-db-1.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/ava/common-db-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/ava/connection-pool-2.3.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/ava/mysql-connector-java-5.1.38.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
