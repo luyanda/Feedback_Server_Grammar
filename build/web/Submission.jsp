@@ -16,12 +16,39 @@
 <html>
 <head>
     <style>
-        h1 {
-            border-left: 6px solid red;
-            border-right: 6px solid red;
-            border-top: 6px solid red;
-            border-bottom: 6px solid red;
+        .top-container {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header {
+            padding: 1em;
+            color: #4169E1;
             background-color: lightgrey;
+            clear: left;
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky + .content {
+            padding-top: 102px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .active {
+            background-color: #4CAF50;
         }
         .main {
             padding: 16px;
@@ -34,6 +61,12 @@
             text-align: left;
             background-color: lightblue;
             margin-top: 20px;
+        }
+        :target:before {
+            content:"";
+            display:block;
+            height:90px; /* fixed header height*/
+            margin:-90px 0 0; /* negative fixed header height */
         }
     </style>
     <meta charset="utf-8">
@@ -48,9 +81,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <%
-        
-    %>
   <script>
     $(document).ready(function(){
         $("h6").click(function(){
@@ -116,22 +146,29 @@
     }
     
   </script>
+
 </head>
   
     <%@include file="SubmissionHeader.jsp" %>
     <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="chooseProject.jsp">Re-Submit</a></li>
-            <!--li><a>Submission History</a></li-->
-            <li><a href="#">Re-Submit</a></li>
-            <li><a href="#result">Results</a></li>
-            <li><a href="#random">Random View</a></li>
-            <li><a href="#negative">False Neg</a></li>
-            <li><a href="#positive">False Pos</a></li>
-            <li><a href="#detailed">Pos Detail</a></li>
-        </ul>
-    </div>   
+        <div class="top-container">
+            <header>
+                Feedback Grammar Results
+            </header>
+        </div>
+        <div class="header" id="myHeader">
+            <div>
+                <ul>
+                    <li><a href="chooseProject.jsp">Re-Submit</a></li>
+                    <li><a href="#">Re-Submit</a></li>
+                    <li><a href="#result">Results</a></li>
+                    <li><a href="#random">Random View</a></li>
+                    <li><a href="#negative">False Neg</a></li>
+                    <li><a href="#positive">False Pos</a></li>
+                    <li><a href="#detailed">Pos Detail</a></li>
+                </ul>
+            </div>   
+        </div>
         <div class="main">
             <!--H6>Results Page</H6-->
         </div>
@@ -425,6 +462,20 @@
             </div>        
                 </div>
         </div>
+  <script>
+window.onscroll = function() {myFunction()};
 
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+  </script>
+                               <!--%@include file="foot.jsp" %-->
     </body>
 </html>

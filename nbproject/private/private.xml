@@ -4,15 +4,17 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/epsilon/Documents/Varsity/Project/web/SubmissionHeader.jsp</file>
+            <file>file:/home/epsilon/Documents/Varsity/Project/web/Login.jsp</file>
+            <file>file:/home/epsilon/Documents/Varsity/Project/web/subHeader.jsp</file>
             <file>file:/home/epsilon/Documents/Varsity/Project/src/java/ava/DbAccess.java</file>
             <file>file:/home/epsilon/Documents/Varsity/Project/web/Submission.jsp</file>
             <file>file:/home/epsilon/Documents/Varsity/Project/web/fileUpload.jsp</file>
             <file>file:/home/epsilon/Documents/Varsity/Project/web/RandomView.jsp</file>
-            <file>file:/home/epsilon/Documents/Varsity/Project/web/PositiveView.jsp</file>
-            <file>file:/home/epsilon/Documents/Varsity/Project/web/NegativeView.jsp</file>
             <file>file:/home/epsilon/Documents/Varsity/Project/src/java/WebOperation/Operation.java</file>
+            <file>file:/home/epsilon/Documents/Varsity/Project/web/foot.jsp</file>
             <file>file:/home/epsilon/Documents/Varsity/Project/web/chooseProject.jsp</file>
             <file>file:/home/epsilon/Documents/Varsity/Project/web/results.jsp</file>
+            <file>file:/home/epsilon/Documents/Varsity/Project/web/Header.jsp</file>
         </group>
     </open-files>
 </project-private>

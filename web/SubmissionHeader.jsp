@@ -18,14 +18,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <head>
     <style>
-        header {
-            padding: 1em;
-            color: #4169E1;
-            background-color: lightgrey;
-            clear: left;
-            text-align: center;
-            font-size: xx-large;
-        }
         sty{
             color: orange;
             font-size: x-large;

@@ -37,7 +37,7 @@
                 <h1>File Upload</h1>
                 <h3>For project ID: <%= project.getName() %></h3>
                 <form method="post" action="Operation" enctype="multipart/form-data">
-                    Select file to upload: <input type="file" name="file" size="60" /><br />
+                    Select file to upload: <input type="file" name="file" size="60" required/><br />
                     <br /> <input type="submit" value="Upload" />
                 </form>
             </center>
